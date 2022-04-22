@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Cronometro</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <audio id="sound"  src="alarme.mp3" style= display none;></audio>
+    
+    
+    <section>
+    <div class="container">
+        
+             <h2>Minutos</h2>
+            <select id="minutos" name="minutos"></select>
+
+            <h2>Segundos</h2>
+            <select id="segundos" name="segundos"></select>
+        
+            <div id="display">
+                <h3></h3>
+            </div>
+
+      
+        <button id="comecar" onclick="comecar()">Comecar</button>
+        <button id="zerar"  onclick="zerar()" >Zerar</button>
+    </div>
+
+    <footer>
+        <p>&copy; ProjectDevolepBrazil 2022</p>
+        <div class="footer"></div>
+    </footer>
+
+</section>
+    <script src="script.js"> 
+    </script>
+</body>
+</html>

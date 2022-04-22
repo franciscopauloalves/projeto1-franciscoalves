@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    div{
+        const btn = document.getElementById("send"); let valorDesconto = document.getElementById("valor-desconto"); let valorFinal = document.getElementById("valor-total"); btn.addEventListener("click", calculoDesconto); function calculoDesconto(e) { const valorAno = document.getElementById("ano"); let ano = parseInt(valorAno.value); let valor = document.getElementById("valor"); let preco = parseInt(valor.value); // console.log(preco); if (ano <= 2010) { let desconto = preco * (12 / 100); let valorTotal = preco - preco * (12 / 100); valorDesconto.textContent = `Desconto de 12%: R$ ${desconto}`; valorFinal.textContent = `O valor total do veículo é: R$ ${valorTotal}`; console.log(valorTotal); } else { let desconto = preco * (7 / 100); let valorTotal = preco - preco * (7 / 100); valorDesconto.textContent = `Desconto de 12%: R$ ${desconto}`; valorFinal.textContent = `O valor total do veículo é: R$ ${valorTotal}`; } e.preventDefault; }
+    }
+    
+</body>
+</html>
